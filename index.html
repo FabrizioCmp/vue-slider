@@ -31,7 +31,8 @@
                 <div class="thumbs">
                     <div class="prev" @click="btnUpclick"></div>
                     <div class="next" @click="btnDownclick"></div>
-                    <div class="thumb" :class="(i === currentImg)? 'active' :''" v-for="(game,i) in slide">
+                    <div class="thumb" :class="(i === currentImg)? 'active' :''" v-for="(game,i) in slide"
+                    @click="currentImg = i">
                         <img :src="game.image"  alt='Svezia' />
                     </div>
 
